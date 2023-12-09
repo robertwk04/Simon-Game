@@ -57,19 +57,19 @@ function loseScreen(){
 function sound(key) {
     switch (key) {
         case "green":
-            var sound=new Audio("./sounds/green.mp3");
+            var sound=new Audio("./green.mp3");
             sound.play();
             break;
         case "blue":
-            var sound=new Audio("./sounds/blue.mp3");
+            var sound=new Audio("./blue.mp3");
             sound.play();
             break;
         case "red":
-            var sound=new Audio("./sounds/red.mp3");
+            var sound=new Audio("./red.mp3");
             sound.play();
             break;
         case "yellow":
-            var sound=new Audio("./sounds/yellow.mp3");
+            var sound=new Audio("./yellow.mp3");
             sound.play();
             break;
     
@@ -115,7 +115,7 @@ function wrongBackround()
 {
   $("#level-title").text("You lose!Press a key..");
   $("body").addClass("game-over");
-  var sound=new Audio("./sounds/wrong.mp3");
+  var sound=new Audio("./wrong.mp3");
         sound.play();
   setTimeout(function(){$("body").removeClass("game-over");},100);
 
